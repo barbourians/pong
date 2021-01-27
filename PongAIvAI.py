@@ -390,8 +390,8 @@ def init_game():
     
     # Pick one of these
     #paddles[1].move_getter = chaser_ai.pong_ai      # AI plays against themself
-    paddles[1].move_getter = directions_from_input  # Manually control the paddle
-    #paddles[1].move_getter = student_ai.pong_ai     # Student code
+    #paddles[1].move_getter = directions_from_input  # Manually control the paddle
+    paddles[1].move_getter = student_ai.pong_ai     # Student code
 
                            
     game_loop(screen, paddles, ball, table_size, clock_rate, turn_wait_rate, score_to_win, 1)
